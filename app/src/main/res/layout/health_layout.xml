@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include layout="@layout/tool_bar_layout"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+
+                                                           android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/guideline26"
+                                                        app:layout_constraintGuide_begin="20dp"
+                                                        android:orientation="vertical"/>
+            <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/guideline27"
+                                                        app:layout_constraintGuide_end="20dp"
+                                                        android:orientation="vertical"/>
+            <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="51dp" android:id="@+id/spinner3"
+                    android:background="@drawable/spinner_curved_rectangle_white"
+
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
+            />
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:hint="Meating Name"
+                    android:ems="10"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:id="@+id/editText2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner3"/>
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:hint="Doctor Name"
+                    android:ems="10"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:id="@+id/editText3"
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/editText2"/>
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:hint="From Date/Time"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:ems="10"
+
+                    android:drawableEnd="@drawable/calendar_range"
+                    android:id="@+id/editText4"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27"
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintTop_toBottomOf="@+id/editText3" android:layout_marginTop="16dp"/>
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:hint="To Date/Time"
+                    android:drawableEnd="@drawable/calendar_range"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:ems="10"
+                    android:id="@+id/editText5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/editText4"/>
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:hint="Location"
+                    android:ems="10"
+                    android:background="@drawable/curved_rectangle_white"
+                    android:id="@+id/editText6"
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/editText5"/>
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:hint="Frequency"
+                    android:ems="10"
+                    android:id="@+id/editText7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/editText6"
+                    android:background="@drawable/curved_rectangle_white"/>
+            <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="50dp" android:id="@+id/spinner"
+                    android:background="@drawable/spinner_curved_rectangle_white"
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/editText7"
+            />
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:hint="Add Notes"
+                    android:ems="10"
+                    android:id="@+id/editText9"
+                    android:background="@drawable/curved_rectangle_white"
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/spinner"/>
+            <Button
+                    android:text="Save"
+                    android:background="@drawable/curved_rectangle_theme"
+                    android:layout_width="0dp"
+                    android:layout_margin="16dp"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="@android:color/white"
+                    android:layout_height="50dp" android:id="@+id/button2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline26"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline27"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/editText9"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>
